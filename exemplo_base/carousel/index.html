@@ -8,64 +8,91 @@
 </head>
 
 <body>
-
+	
 	<nav class="navbar navbar-expand-lg fixed-top">
 		<a class="navbar-brand col-3" href="#">Infusion</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon">
-			  <span class="sr-only">Abrir ou fechar menu</span> &#9776;
-		  </span>
+			<span class="navbar-toggler-icon">
+				<span class="sr-only">Abrir ou fechar menu</span> &#9776;
+			</span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">
-				  design folio
-				  <span class="sr-only">(página atual)</span>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">services</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">our business</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">how we help</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">take the tour</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">contact</a>
-			</li>
-		  </ul>
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">
+						design folio
+						<span class="sr-only">(página atual)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">our business</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">how we help</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">take the tour</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">contact</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
-
-	<div class="jumbotron jumbotron-fluid">
+	
+	<div class="jumbotron jumbotron-fluid d-md-none">
 		<div class="container">
-		  <h1 class="display-4">Cutting Edge <abbr title="Wordpress">WP</abbr> business theme</h1>
-		  <p class="lead">Gutful of bottlo no dramas he's got a massive hooroo.</p>
-		  <a href="#" class="btn btn-primary btn-lg">Buy it now</a>
-
-		  <h1 class="display-4">Very photo, such waves, wow.</h1>
-		  <p class="lead">A very artsy photo with waves crashing over rocks. So /emosh.</p>
-		  <a href="#" class="btn btn-primary btn-lg">BEER ME!</a>
+			<h1 class="display-4">Cutting Edge <abbr title="Wordpress">WP</abbr> business theme</h1>
+			<p class="lead">Gutful of bottlo no dramas he's got a massive hooroo.</p>
+			<a href="#" class="btn btn-primary btn-lg">Buy it now</a>
+			
+			<h1 class="display-4">Very photo, such waves, wow.</h1>
+			<p class="lead">A very artsy photo with waves crashing over rocks. So /emosh.</p>
+			<a href="#" class="btn btn-primary btn-lg">BEER ME!</a>
 		</div>
 	</div>
-
-
-    <!-- carousel -->
-    <h5>CUTTING EDGE WP BUSINESS THEME</h5>
-	<p>Gutful of bottlo no dramas he's got a massive hooroo.</p>
-	<a href="#">BUY IT NOW</a>
-
-	<h5>VERY PHOTO, SUCH WAVES, WOW.</h5>
-	<p>A very artsy photo with waves crashing over rocks. So /emosh.</p>
-	<a href="#">BEER ME!</a>
+	
+	<div id="carouselHome" class="carousel slide d-none d-md-block" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselHome" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-interval="10000">
+				<img src="../resource/img/cr/01.jpg" class="d-block w-100" alt="">
+				<div class="carousel-caption d-none d-md-block">
+					<p class="h5">CUTTING EDGE WP BUSINESS THEME</p>
+					<p class="carousel-text">Gutful of bottlo no dramas he's got a massive hooroo.</p>
+					<a href="#" class="btn mb-5">BUY IT NOW</a>
+				</div>
+			</div>
+			<div class="carousel-item" data-interval="10000">
+				<img src="../resource/img/cr/02.jpg" class="d-block w-100" alt="">
+				<div class="carousel-caption d-none d-md-block">
+					<p class="h5">VERY PHOTO, SUCH WAVES, WOW.</p>
+					<p class="carousel-text">A very artsy photo with waves crashing over rocks. So /emosh.</p>
+					<a href="#" class="btn mb-5">BEER ME!</a>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Próximo</span>
+		</a>
+	</div> <!-- .carouselHome -->
+	
+	
+	
+	
 	<!-- carousel -->
-
+	
 	<section class="section-cards">
 		<div class="container">
 			<div class="row">
@@ -112,15 +139,15 @@
 			</div>
 		</div>
 	</section> <!-- .section-cards -->
-
+	
 	<section class="section-content">
 		<div class="container">
 			<div class="row">
 				<article class="col-md-6">
 					<h2 class="h3">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h2>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>            
-    				<a href="#" class="btn btn-primary">BUTTON</a>
-    				<a href="#" class="btn btn-secondary">BUTTON</a> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>            
+					<a href="#" class="btn btn-primary">BUTTON</a>
+					<a href="#" class="btn btn-secondary">BUTTON</a> 
 				</article>
 				<article class="col-md-6">
 					<h2 class="h3">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed</h2>
@@ -130,7 +157,7 @@
 			</div>
 		</div>
 	</section> <!-- .section-content -->
-
+	
 	<section class="section-articles">
 		<div class="articles-container">
 			<h2 class="container h3">Last Articles</h2>
@@ -150,30 +177,30 @@
 			<a href="#"><img src="../resource/img/cr/articles/12.jpg" alt=""></a>
 		</div>
 	</section>
-
+	
 	<section class="section-notebooks">
 		<div class="container">
 			<div id="carouselNote" class="carousel slide carousel-fade" data-ride="carousel">
 				<div class="carousel-inner">
-				  <div class="carousel-item active" data-interval="5000">
-					<img class="d-block w-100" src="../resource/img/cr/slider/slide-01.png" alt="...">
-				  </div>
-				  <div class="carousel-item" data-interval="5000">
-					<img class="d-block w-100" src="../resource/img/cr/slider/slide-02.png" alt="...">
-				  </div>
+					<div class="carousel-item active" data-interval="5000">
+						<img class="d-block w-100" src="../resource/img/cr/slider/slide-01.png" alt="...">
+					</div>
+					<div class="carousel-item" data-interval="5000">
+						<img class="d-block w-100" src="../resource/img/cr/slider/slide-02.png" alt="...">
+					</div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselNote" role="button" data-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Anterior</span>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
 				</a>
 				<a class="carousel-control-next" href="#carouselNote" role="button" data-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Próximo</span>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Próximo</span>
 				</a>
-			  </div>
+			</div>
 		</div>
 	</section> <!-- .section-notebooks -->
-
+	
 	<section class="section-quote">
 		<div class="container">
 			<div class="row">
@@ -189,7 +216,7 @@
 		</div>
 	</section>
 	
-    <footer class="footer">
+	<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2">
@@ -213,10 +240,10 @@
 			</div>
 		</div>
 	</footer>        
-
+	
 	<script src="../resource/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="../resource/js/popper.min.js"></script>
-    <script src="../resource/js/bootstrap.min.js"></script>
+	<script src="../resource/js/popper.min.js"></script>
+	<script src="../resource/js/bootstrap.min.js"></script>
 </body>
 
 </html>
